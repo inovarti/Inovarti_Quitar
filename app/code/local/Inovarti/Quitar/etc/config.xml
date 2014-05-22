@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Quitar
+ *
+ * @category    Quitar
+ * @package     Inovarti_Quitar
+ * @copyright   Copyright (c) 2013 Inovarti. (http://www.inovarti.com.br)
+ */
+-->
+<config>
+    <modules>
+        <Inovarti_Quitar>
+            <version>0.1.0</version>
+        </Inovarti_Quitar>
+    </modules>
+    <global>
+        <models>
+            <quitar>
+                <class>Inovarti_Quitar_Model</class>
+            </quitar>
+        </models>
+        <helpers>
+            <quitar>
+                <class>Inovarti_Quitar_Helper</class>
+            </quitar>
+        </helpers>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Inovarti_Quitar>
+                    <files>
+                        <default>Inovarti_Quitar.csv</default>
+                    </files>
+                </Inovarti_Quitar>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <quitar>
+            <fields>
+                <address>1</address>
+                <number>2</number>
+                <more>3</more>
+            </fields>
+        </quitar>
+    </default>
+</config>

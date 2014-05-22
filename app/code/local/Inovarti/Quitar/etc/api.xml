@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Quitar
+ *
+ * @category    Quitar
+ * @package     Inovarti_Quitar
+ * @copyright   Copyright (c) 2013 Inovarti. (http://www.inovarti.com.br)
+ */
+-->
+<config>
+    <api>
+        <resources>
+            <quitar translate="title" module="quitar">
+                <model>quitar/api</model>
+                <title>Quitar Resource</title>
+                <acl>quitar</acl>
+                <methods>
+                    <orders translate="title" module="quitar">
+                        <title>Order List</title>
+                        <method>orders</method>
+                        <acl>quitar/orders</acl>
+                    </orders>
+                </methods>
+                <faults module="quitar">
+                    <not_exists>
+                        <code>100</code>
+                        <message>Order not exists.</message>
+                    </not_exists>
+                </faults>
+            </quitar>
+        </resources>
+        <acl>
+            <resources>
+                <quitar translate="title" module="quitar">
+                    <title>Quitar Resource</title>
+                    <sort_order>100</sort_order>
+                    <orders translate="title" module="quitar">
+                        <title>Order List</title>
+                        <sort_order>10</sort_order>
+                    </orders>
+                </quitar>
+            </resources>
+        </acl>
+    </api>
+</config>
