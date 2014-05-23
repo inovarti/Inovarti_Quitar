@@ -2,7 +2,7 @@
     <modules>
         <Inovarti_Quitar>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Inovarti_Quitar>
     </modules>
 </config>
