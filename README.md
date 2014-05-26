@@ -25,9 +25,13 @@ Setup
 
 
 "Sistema -> Configurações -> Inovarti -> Quitar
+
 Endereço = Linha do campo de endereço para ser usado como logradouro.
+
 Número = Linha do campo de endereço para ser usado como número.
-Complemento = Linha do campo de endereço para ser usado como complemento"
+
+Complemento = Linha do campo de endereço para ser usado como complemento
+"
 
 
 3. Criar uma Função para o SOAP e marcar os recursos do Quitar. 
