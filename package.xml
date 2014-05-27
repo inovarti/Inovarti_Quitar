@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>inovarti_quitar</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>Inovarti License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>API para integrar com Quitar</summary>
+    <description>http://quitar.com.br</description>
+    <notes>Vers&#xE3;o 0.1.0&#xD;
+- API para integrar com Quitar </notes>
+    <authors><author><name>Inovarti</name><user>Inovarti</user><email>suporte@inovarti.com.br</email></author></authors>
+    <date>2014-05-23</date>
+    <time>02:38:22</time>
+    <contents><target name="magecommunity"><dir name="Inovarti"><dir name="Quitar"><dir name="Helper"><file name="Data.php" hash="06b714f1b5469bf7ec16f8296bb93ba0"/></dir><dir name="Model"><file name="Api.php" hash="b56a1406fe61755a9f46b608cae4527b"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Line.php" hash="fd44b8d5f73dbc0ed46278da7a60b5d6"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="b185a6666c39a4c59797b2e7fef3f110"/><file name="api.xml" hash="88946727805f8c7668b69ee9d3f21c51"/><file name="config.xml" hash="e8cc5011ac3d44c7e3a5f1ae7aefdbfb"/><file name="system.xml" hash="762debd0abc0a5ce779747f04c1eacc1"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Inovarti_Quitar.xml" hash="9bd323439b1609a80cd10af97411cc06"/></dir></target><target name="magelocale"><dir><dir name="pt_BR"><file name="Inovarti_Quitar.csv" hash="704769802b63f9907895819c71ddf2e5"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
