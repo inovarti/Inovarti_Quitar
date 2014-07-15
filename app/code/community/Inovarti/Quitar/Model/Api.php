@@ -47,14 +47,14 @@ class Inovarti_Quitar_Model_Api extends Mage_Api_Model_Resource_Abstract {
                 ))
                 ->where('o.status NOT IN(?)', array('canceled', 'holded'))
                 ->where('a.address_type = ?', 'shipping')
-                ->where('t.carrier_code LIKE ?', '%correios%')
+                ->where('t.carrier_code LIKE ? OR t.carrier_code = \'custom\' ', '%correios%')
                 ->order('o.entity_id ASC')
                 ->limit($limit);
 
         if ($orderId) {
             $select->where('o.entity_id > ?', $orderId);
         }
-
+        //return $select->__toString();
         return json_encode($this->_getConnection()->fetchAll($select));
     }
 
@@ -74,7 +74,7 @@ class Inovarti_Quitar_Model_Api extends Mage_Api_Model_Resource_Abstract {
                 ->select()
                 ->from(array('o' => $this->_getResource()->getTableName('sales/order')), array('entity_id'))
                 ->where('o.increment_id = ?', $incrementId);
-        Mage::log("_getOrderIdByIncrementId(): " . print_r($select->__toString(), 1));
+        //Mage::log("_getOrderIdByIncrementId(): " . print_r($select->__toString(), 1));
         return $this->_getConnection()->fetchOne($select);
     }
 
