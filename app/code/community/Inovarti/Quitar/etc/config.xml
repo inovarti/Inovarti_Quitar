@@ -11,7 +11,7 @@
 <config>
     <modules>
         <Inovarti_Quitar>
-            <version>0.1.1</version>
+            <version>0.1.2</version>
         </Inovarti_Quitar>
     </modules>
     <global>

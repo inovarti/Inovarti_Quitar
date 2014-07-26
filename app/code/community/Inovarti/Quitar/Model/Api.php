@@ -47,7 +47,7 @@ class Inovarti_Quitar_Model_Api extends Mage_Api_Model_Resource_Abstract {
                 ))
                 ->where('o.status NOT IN(?)', array('canceled', 'holded'))
                 ->where('a.address_type = ?', 'shipping')
-                ->where('t.carrier_code LIKE ? OR t.carrier_code = \'custom\' ', '%correios%')
+                //->where('t.carrier_code LIKE ? OR t.carrier_code = \'custom\' ', '%correios%')
                 ->order('o.entity_id ASC')
                 ->limit($limit);
 
